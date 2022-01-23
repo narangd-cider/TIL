@@ -18,7 +18,7 @@
   * J2SE 1.2(1998): Java2
   * J2SE(Standard edition) / J2ME(micro edition) / J2EE(enterprise edition) 
   * J2SE 5.0 (2004) 
-  * Java SE 8 (2014) : 6개월마다 버전 업데이트 중
+  * Java SE 8 (2014): 6개월마다 버전 업데이트 중
   * Java SE 13 (2019)
   <br/><br/>
 
@@ -59,12 +59,12 @@
   * Ctrl + (+, -): 글자 크기 조절
   * Ctrl + D: 한줄 삭제
   * Ctrl + Alt + Down: 행 단위 복사
-  * Alt + Shift + A : 멀티 컬럼 편집
-  * Alt + (Up, Down) : 행 단위 이동
-  * Tap : 들여쓰기  
-  * Shift + Tap : 내어쓰기
-  * Ctrl + I : 자동 들여쓰기
-  * Ctrl + Sspace : 자동인식
+  * Alt + Shift + A: 멀티 컬럼 편집
+  * Alt + (Up, Down): 행 단위 이동
+  * Tap: 들여쓰기  
+  * Shift + Tap: 내어쓰기
+  * Ctrl + I: 자동 들여쓰기
+  * Ctrl + Sspace: 자동인식
   * 충돌 발생 시 Window > Preferences > general > keys > copy line 변경
   * Java > Editor > Templates > sysout > sop 변경 
   * content Assist > Auto activation triggers for java > a-z까지 등록
