@@ -61,6 +61,7 @@
     long i = 3.14f // long < float
     float f = 3.14; // float < double 
      ```
+    <br/><br/>
 
 * **형식화된 출력 - printf( )**
   
@@ -113,6 +114,7 @@
   System.out.printf("[%-20s]%n", url);// [www.codechobo.com   ] (왼쪽 정렬)
   System.out.printf("[%8s]%n", url)   // [www.code] (8자리만 출력)
   ```
+  <br/><br/>
 
 * **화면에서 입력받기 - Scanner**
   * Scanner: 화면으로부터 데이터를 입력받는 기능을 제공하는 클래스
@@ -131,6 +133,7 @@
   String input = scanner.nextLine() // 화면에서 입력받은 내용을 input에 저장
   int num03 = Integer.parseInt(input) // 문자열(inptu)을 숫자(num)으로 변환
   ```
+  <br/><br/>
 
 * **형변환**
 
