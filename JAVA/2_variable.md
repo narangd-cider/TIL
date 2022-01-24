@@ -1,4 +1,4 @@
->**본 게시물은 남궁성의 정석코딩 자바의 정석 기초편 강의 및 Java의 정석 교재를 학습한 후 정리하였습니다.**
+>**[ 남궁성의 정석코딩/ 자바의 정석 기초편 강의 ] 및 [ Java의 정석 ] 교재 를 학습한 후 정리하였습니다.**
 
 </br>
 
@@ -68,71 +68,71 @@
   * println( ) 출력 형식 지정 불가능
   * printf( )로 출력 형식 지정 가능
   <br/><br/>
-  ```java
-  // println 출력형식 지정 불가
-  System.out.println(10.0/3); // 3.3333333... (실수의 자리수 조절 불가)
-  System.out.println(0x1A); // 26 (10진수로만 출력 가능)
-  
-  // printf 출력형식 지정 가능
-  System.out.printf("%2f", 10.0/3); // 3.33
-  System.out.printf("%d", 0x1A); // 26
-  System.out.printf("%x", 0x1A); // 1A
-  
-  /* printf 지시자
-  논리형 %b
-  정수형 %d, %o, %x, %X
-  실수형 %f, %e, %E
-  문자형 %c, %s
-  */
-  
-  // 정수를 10, 8, 16진수로 출력
-  System.out.printf("%d",15); // 15
-  System.out.printf("%o",15); // 17
-  System.out.printf("%x", 15); // f
-  System.out.printf("%s", integer.toBinaryString(15)); // 1111 (toBinaryString 정수>2진수 변환 메소드)
-  
-  // 8진수와 16진수에 접두사 붙이기
-  System.out.printf("%#o",15); // 017
-  System.out.printf("%#x",15); // 0xf
-  System.out.printf("%#X", 15); // 0XE
-  
-  // 실수 출력을 위한 지시자 %f, 지수형식 %e, 간략한 형식 %g
-  float f = 123.4567890
-  System.out.printf("%f",f); // 123.456787 (소수점 아래 6자리)
-  System.out.printf("%e",f); // 1.234568e+02
-  System.out.printf("%g",123.456789); // 123.457 (소수점 포함 7자리)
-  System.out.printf("%g",0.00000001); // 1.00000e-8
-  
-  System.out.printf("[%5d]%n", 10); // [   10] (앞에 세자리 공백)
-  System.out.printf("[%-5d]%n", 10); // [10   ] (왼쪽 정렬, 뒤에 세자리 공백)
-  System.out.printf("[%05d]%n", 10); // [00010] (공백을 0으로 채움. 값이 지정한 자리수보다 큰 경우 짤리지 않고 모두 출력)
-  
-  System.out.printf("d=%14.10f%n",d); // 전체 14자리 중 소수점 아래 10자리
-  
-  System.out.printf("[%s]%n", url);   // [www.codechobo.com]
-  System.out.printf("[%20s]%n", url); // [   www.codechobo.com]
-  System.out.printf("[%-20s]%n", url);// [www.codechobo.com   ] (왼쪽 정렬)
-  System.out.printf("[%8s]%n", url)   // [www.code] (8자리만 출력)
-  ```
+    ```java
+    // println 출력형식 지정 불가
+    System.out.println(10.0/3); // 3.3333333... (실수의 자리수 조절 불가)
+    System.out.println(0x1A); // 26 (10진수로만 출력 가능)
+    
+    // printf 출력형식 지정 가능
+    System.out.printf("%2f", 10.0/3); // 3.33
+    System.out.printf("%d", 0x1A); // 26
+    System.out.printf("%x", 0x1A); // 1A
+    
+    /* printf 지시자
+    논리형 %b
+    정수형 %d, %o, %x, %X
+    실수형 %f, %e, %E
+    문자형 %c, %s
+    */
+    
+    // 정수를 10, 8, 16진수로 출력
+    System.out.printf("%d",15); // 15
+    System.out.printf("%o",15); // 17
+    System.out.printf("%x", 15); // f
+    System.out.printf("%s", integer.toBinaryString(15)); // 1111 (toBinaryString 정수>2진수 변환 메소드)
+    
+    // 8진수와 16진수에 접두사 붙이기
+    System.out.printf("%#o",15); // 017
+    System.out.printf("%#x",15); // 0xf
+    System.out.printf("%#X", 15); // 0XE
+    
+    // 실수 출력을 위한 지시자 %f, 지수형식 %e, 간략한 형식 %g
+    float f = 123.4567890
+    System.out.printf("%f",f); // 123.456787 (소수점 아래 6자리)
+    System.out.printf("%e",f); // 1.234568e+02
+    System.out.printf("%g",123.456789); // 123.457 (소수점 포함 7자리)
+    System.out.printf("%g",0.00000001); // 1.00000e-8
+    
+    System.out.printf("[%5d]%n", 10); // [   10] (앞에 세자리 공백)
+    System.out.printf("[%-5d]%n", 10); // [10   ] (왼쪽 정렬, 뒤에 세자리 공백)
+    System.out.printf("[%05d]%n", 10); // [00010] (공백을 0으로 채움. 값이 지정한 자리수보다 큰 경우 짤리지 않고 모두 출력)
+    
+    System.out.printf("d=%14.10f%n",d); // 전체 14자리 중 소수점 아래 10자리
+    
+    System.out.printf("[%s]%n", url);   // [www.codechobo.com]
+    System.out.printf("[%20s]%n", url); // [   www.codechobo.com]
+    System.out.printf("[%-20s]%n", url);// [www.codechobo.com   ] (왼쪽 정렬)
+    System.out.printf("[%8s]%n", url)   // [www.code] (8자리만 출력)
+    ```
   <br/>
 
 * **화면에서 입력받기 - Scanner**
   * Scanner: 화면으로부터 데이터를 입력받는 기능을 제공하는 클래스
   <br/><br/>
-  ```java
-  //import문 추가
-  import java.util.* 
-  // 혹은 import java.util.Scanner
-  
-  // Scanner 객체 생성
-  Scanner scanner = new Scanner(System.in)
-  
-  // Scanner 객체 사용
-  int num01 = scanner.nextInt(); // 화면에서 입력받은 정수를 num에 저장
-  int num02 = scanner.nextFloat();
-  String input = scanner.nextLine() // 화면에서 입력받은 내용을 input에 저장
-  int num03 = Integer.parseInt(input) // 문자열(inptu)을 숫자(num)으로 변환
-  ```
+    ```java
+    //import문 추가
+    import java.util.* 
+    // 혹은 import java.util.Scanner
+    
+    // Scanner 객체 생성
+    Scanner scanner = new Scanner(System.in)
+    
+    // Scanner 객체 사용
+    int num01 = scanner.nextInt(); // 화면에서 입력받은 정수를 num에 저장
+    int num02 = scanner.nextFloat();
+    String input = scanner.nextLine() // 화면에서 입력받은 내용을 input에 저장
+    int num03 = Integer.parseInt(input) // 문자열(inptu)을 숫자(num)으로 변환
+    ```
   <br/>
  
 ### 📌 형변환
