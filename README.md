@@ -18,6 +18,7 @@
 <br/><br/>
 
 ### Javascript
+* [[기본 문법] script 태그의 async / defer 속성](https://github.com/narangd-cider/TIL/blob/main/Javascript/jsBasic.md)
 <br/><br/>
 
 ### JAVA
